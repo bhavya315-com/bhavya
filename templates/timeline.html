@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    {% extends "base.html" %}
+{% block content %}
+<style>
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #014f86; /* deep ocean blue */
+    }
+
+    .list-group-item {
+        background-color: #e0f7fa; /* light sea blue */
+        border: none;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 90, 100, 0.1);
+        color: #023e8a;
+        font-weight: 500;
+    }
+
+    .list-group-item strong {
+        color: #0077b6;
+    }
+</style>
+
+<h2>Timeline of Change</h2>
+<ul class="list-group">
+    <li class="list-group-item"><strong>1950:</strong> Tribe flourishes by the sea.</li>
+    <li class="list-group-item"><strong>1980:</strong> First signs of land erosion.</li>
+    <li class="list-group-item"><strong>2005:</strong> 40% of coastal land lost.</li>
+    <li class="list-group-item"><strong>2020:</strong> Only a few families remain.</li>
+</ul>
+{% endblock %}
+
+</body>
+</html>
